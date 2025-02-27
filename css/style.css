@@ -1,0 +1,163 @@
+*,
+:after,
+:before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: poppins;
+}
+/* green #27AE60 */
+/* yellow #F69E0B */
+/* yellow #FFD428 */
+/* red #F44036 */
+/* blue #005cc880*/
+:root {
+  --green-color: #27ae60;
+  --yellow-color: #f69e0b;
+  --red-color: #f44036;
+  --blue-color: #005cc8;
+  --light-blue-color: #005cc890;
+}
+.game {
+  margin: 100px auto;
+  width: 620px;
+  background-color: #eee;
+  text-align: center;
+  padding: 20px 10px;
+}
+.game .sections {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.game .sections .game_section {
+  background-color: white;
+  padding: 10px;
+  width: 48%;
+}
+.game .sections .game_section .try {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0;
+  cursor: pointer;
+}
+.game .sections .game_section .disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+.game .sections .game_section .try label {
+  margin: 0 5px;
+  font-size: 16px;
+  line-height: 2;
+  width: 40px;
+}
+.game .sections .game_section .try .input {
+  all: unset;
+  width: 30px;
+  height: 30px;
+  background-color: #eee;
+  border-bottom: 2px solid black;
+  font-size: 15px;
+}
+.game .sections .game_section .try .input:focus {
+  border: 1px solid #ddd;
+  border-bottom: 2px solid black;
+}
+.game .sections .game_section .try .in-place {
+  background-color: var(--green-color);
+  border-color: var(--green-color);
+  color: white;
+}
+.game .sections .game_section .try .not-in-place {
+  background-color: var(--yellow-color);
+  border-color: var(--yellow-color);
+  color: white;
+}
+.game .sections .game_section .try .not {
+  background-color: var(--red-color);
+  border-color: var(--red-color);
+  color: white;
+}
+.game .sections .game_section .btns button {
+  all: unset;
+  padding: 5px;
+  cursor: pointer;
+  color: black;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 700;
+  color: white;
+  transition: 0.3s;
+}
+.game .sections .game_section .btns .check {
+  background-color: var(--blue-color);
+  width: 50%;
+}
+.game .sections .game_section .btns .check:disabled,
+.game .sections .game_section .btns .hint:disabled {
+  background-color: #9f9f9f;
+  cursor: no-drop;
+  pointer-events: none;
+}
+.game .sections .game_section .btns .hint {
+  background-color: var(--light-blue-color);
+  width: 30%;
+}
+.game .sections .keys_section {
+  padding: 10px;
+}
+.game .sections .keys_section .key {
+  background-color: white;
+  margin: 10px;
+  padding: 5px 10px;
+  text-align: start;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+}
+.game .sections .keys_section .key .color {
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  border-radius: 50%;
+}
+
+.game .sections .keys_section .key .green {
+  background-color: var(--green-color);
+}
+.game .sections .keys_section .key .yellow {
+  background-color: var(--yellow-color);
+}
+.game .sections .keys_section .key .red {
+  background-color: var(--red-color);
+}
+.game .messege {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 10px;
+  padding: 10px;
+}
+.game .messege span {
+  padding: 0 5px;
+  color: var(--red-color);
+  border-bottom: 2px solid var(--red-color);
+  margin: auto;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  padding: 30px;
+  text-align: center;
+  background-color: #eee;
+  width: 100%;
+  font-size: 18px;
+}
+footer span span {
+  font-weight: bold;
+}
