@@ -27,6 +27,17 @@ body {
   text-align: center;
   padding: 20px 10px;
 }
+@media (max-width: 667px) {
+  .game {
+    width: 380px;
+  }
+  .game .sections {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    flex-direction: column;
+  }
+}
 .game .sections {
   display: flex;
   justify-content: space-between;
@@ -160,4 +171,16 @@ footer {
 }
 footer span span {
   font-weight: bold;
+}
+
+@media (max-width: 667px) {
+  .game .sections {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    flex-direction: column;
+  }
+  .game .sections .game_section {
+    width: 100%;
+  }
 }
